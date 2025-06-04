@@ -1,0 +1,60 @@
+basic:
+    name: 'https://studentinsuranceusa.com/'
+    environments:
+        production: 'https://studentinsuranceusa.com/'
+        staging: 'https://rhfcz6ac7i.wpdns.site/'
+        development: ''
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: '', password: '' }
+        development: null
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - /find-your-school
+        - /insurance
+        - /insurance/k-12-student-accident-insurance-plan-enrollment
+        - /insurance/student-athlete-accident-insurance
+        - /insurance/international-student-health-insurance
+        - /insurance/study-abroad-health-insurance
+        - /insurance/dental-insurance
+        - /insurance/student-vision-insurance
+        - /insurance/student-health-insurance
+        - /insurance/telehealth
+        - /insurance/pet-insurance
+        - /insurance/renters-insurance
+        - /student-resources
+        - /company-history
+        - /founder
+        - /contact
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    delay: 10
+    scroll: false
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    sensitivity: 30
+    night_mode: false
+    retina_images: false
+    single_ip: false
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
